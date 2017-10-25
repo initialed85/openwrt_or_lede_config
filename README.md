@@ -1,6 +1,6 @@
 ### Openwrt/LEDE configuration stuff
 
-This repo contains some useful OpenWrt/LEDE configurations that (I feel) aren't clearly documented elsewhere.
+This repo will aim to contain some useful OpenWrt/LEDE configurations that (I feel) aren't clearly documented elsewhere.
 
 #### dot1q_fed_to_vaps
 
