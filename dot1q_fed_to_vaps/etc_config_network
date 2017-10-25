@@ -1,0 +1,71 @@
+config interface 'loopback'
+    option ifname 'lo'
+    option proto 'static'
+    option ipaddr '127.0.0.1'
+    option netmask '255.0.0.0'
+
+config interface 'vlan6'
+    option ifname 'eth1.6'
+    option type 'bridge'
+
+config interface 'vlan7'
+    option ifname 'eth1.7'
+    option proto 'static'
+    option ipaddr '10.7.0.21'
+    option netmask '255.255.0.0'
+    option gateway '10.7.0.2'
+    option dns '8.8.8.8 8.8.4.4'
+
+config interface 'vlan8'
+    option ifname 'eth1.8'
+    option type 'bridge'
+
+config interface 'vlan9'
+    option ifname 'eth1.9'
+    option type 'bridge'
+
+config interface 'vlan10'
+    option ifname 'eth1.10'
+    option type 'bridge'
+
+config interface 'wan'
+    option type 'bridge'
+    option ifname 'wlan1'
+    option proto 'static'
+    option ipaddr '192.168.2.1'
+    option netmask '255.255.255.0'
+
+config switch
+    option name 'switch0'
+    option reset '1'
+    option enable_vlan '1'
+
+config switch_vlan
+    option device 'switch0'
+    option vlan '10'
+    option vid '10'
+    option ports '0t 2 3 4 5t'
+
+config switch_vlan
+    option device 'switch0'
+    option vlan '7'
+    option vid '7'
+    option ports '0t 5t'
+
+config switch_vlan
+    option device 'switch0'
+    option vlan '11'
+    option ports '0t 5t'
+    option vid '6'
+
+config switch_vlan
+    option device 'switch0'
+    option vlan '12'
+    option vid '9'
+    option ports '0t 5t'
+
+config switch_vlan
+    option device 'switch0'
+    option vlan '13'
+    option ports '0t 5t'
+    option vid '8'

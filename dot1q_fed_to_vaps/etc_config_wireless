@@ -1,0 +1,79 @@
+config wifi-device 'radio0'
+    option type 'mac80211'
+    option channel '36'
+    option hwmode '11a'
+    option path 'pci0000:01/0000:01:00.0'
+    option htmode 'VHT80'
+    option country 'AU'
+    option disabled '0'
+
+config wifi-iface 'default_radio0'
+    option device 'radio0'
+    option mode 'ap'
+    option ssid 'SSID_Vlan10'
+    option network 'vlan10'
+    option encryption 'psk2+ccmp'
+    option key 'Password_Vlan10'
+
+config wifi-iface
+    option device 'radio0'
+    option mode 'ap'
+    option ssid 'SSID_Vlan9'
+    option network 'vlan9'
+    option encryption 'psk2+ccmp'
+    option key 'Password_Vlan9'
+
+config wifi-iface
+    option device 'radio0'
+    option mode 'ap'
+    option ssid 'Vlan8_SSID'
+    option network 'vlan8'
+    option encryption 'psk2+ccmp'
+    option key 'Password_Vlan8'
+
+config wifi-iface
+    option device 'radio0'
+    option mode 'ap'
+    option encryption 'none'
+    option ssid 'Vlan6_SSID_Guest'
+    option network 'vlan6'
+
+config wifi-device 'radio1'
+    option type 'mac80211'
+    option channel '11'
+    option hwmode '11g'
+    option path 'platform/qca955x_wmac'
+    option htmode 'HT20'
+    option country 'AU'
+    option disabled '0'
+
+config wifi-iface 'default_radio1'
+    option device 'radio1'
+    option mode 'ap'
+    option ssid 'SSID_Vlan10'
+    option network 'vlan10'
+    option encryption 'psk2+ccmp'
+    option key 'Password_Vlan10'
+
+config wifi-iface
+    option device 'radio1'
+    option mode 'ap'
+    option ssid 'SSID_Vlan9'
+    option network 'vlan9'
+    option encryption 'psk2+ccmp'
+    option key 'Password_Vlan9'
+
+config wifi-iface
+    option device 'radio1'
+    option mode 'ap'
+    option ssid 'Vlan8_SSID'
+    option network 'vlan8'
+    option encryption 'psk2+ccmp'
+    option key 'Password_Vlan8'
+
+config wifi-iface
+    option device 'radio1'
+    option mode 'ap'
+    option encryption 'none'
+    option ssid 'Vlan6_SSID_Guest'
+    option network 'vlan6'
