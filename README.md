@@ -27,3 +27,12 @@ With regard to the switch configuration in etc_config_network:
 So, we tag all VLANs on port 0 (CPU) so that we can ultimately pull them into the OS and assign them interfaces (which
 enables us to bridge them to VAPs) and we tag all VLANs on port 5 (physical port 4) because that's the root of those VLANs
 (from the Cisco switch).
+
+#### multi_ssid_client
+
+This folder contains a configuration that simulates the behaviour of your computer or your phone, in that you've probably
+got multiple SSIDs remembered and you expect your device to connect to them whenver they're in range.
+
+It's a little untidy, as it basically requires an interface for each possible connection, but it works.
+
+You'll need to configure the firewall how you like (this is just designed to cater for the wireless side).
